@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Coaching NL - Plan jouw Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1f3b67; /* Donkerblauw */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ff3b3b; /* Rood */
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .planner {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .training {
+            background-color: white;
+            border: 2px solid #1f3b67; /* Donkerblauw */
+            border-radius: 10px;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .training h3 {
+            color: #1f3b67;
+            margin-bottom: 10px;
+        }
+
+        .training p {
+            margin: 10px 0;
+        }
+
+        .training button {
+            background-color: #ff3b3b; /* Rood */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .training button:hover {
+            background-color: #cc3232;
+        }
+
+        footer {
+            background-color: #1f3b67; /* Donkerblauw */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .form-section {
+            margin-top: 40px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #1f3b67;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form input, form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background-color: #1f3b67; /* Donkerblauw */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #163259;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gym Coaching NL</h1>
+    <p>Plan jouw training eenvoudig en blijf fit!</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Over Ons</a>
+    <a href="#">Lessen</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="intro">
+        <h2>Onze Trainingen</h2>
+        <p>Kies een training en plan jouw sessie vandaag nog.</p>
+    </div>
+
+    <div class="planner">
+        <div class="training">
+            <h3>Krachttraining</h3>
+            <p>Versterk je spieren en verbeter je uithoudingsvermogen.</p>
+            <p>Trainer: Jan de Vries</p>
+            <p>Duur: 1 uur</p>
+            <button>Plan Training</button>
+        </div>
+
+        <div class="training">
+            <h3>Cardio Sessie</h3>
+            <p>Verbeter je conditie en verbrand calorieën.</p>
+            <p>Trainer: Lisa van Dijk</p>
+            <p>Duur: 45 minuten</p>
+            <button>Plan Training</button>
+        </div>
+
+        <div class="training">
+            <h3>Yoga</h3>
+            <p>Ontspan en verbeter je flexibiliteit.</p>
+            <p>Trainer: Sarah Bakker</p>
+            <p>Duur: 1 uur</p>
+            <button>Plan Training</button>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h2>Meld je aan voor een training</h2>
+        <form action="#" method="POST">
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="training">Kies een training:</label>
+            <select id="training" name="training" required>
+                <option value="krachttraining">Krachttraining</option>
+                <option value="cardio">Cardio Sessie</option>
+                <option value="yoga">Yoga</option>
+            </select>
+
+            <label for="datum">Kies een datum:</label>
+            <input type="date" id="datum" name="datum" required>
+
+            <button type="submit">Aanmelden</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Gym Coaching NL - Alle rechten voorbehouden</p>
+</footer>
+
+</body>
+</html>
